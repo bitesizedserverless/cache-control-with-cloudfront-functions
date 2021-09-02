@@ -15,6 +15,10 @@ setuptools.setup(
     package_dir={"": "cache_control_with_cloudfront_functions"},
     packages=setuptools.find_packages(where="cache_control_with_cloudfront_functions"),
     install_requires=[
+        "aws-cdk.aws-cloudfront==1.121.0",
+        "aws-cdk.aws-iam==1.121.0",
+        "aws-cdk.aws-s3-deployment==1.121.0",
+        "aws-cdk.aws-s3==1.121.0",
         "aws-cdk.core==1.121.0",
         "black==21.6b0",
         "pylint==2.10.2",
